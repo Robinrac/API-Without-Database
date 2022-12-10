@@ -11,9 +11,9 @@ const candiesControllers = require("../controllers/candiesControllers");
 //get, get(id), post, put, delete
 router.get("/", candiesControllers.getCandies);
 router.get("/:id", candiesControllers.getById);
-router.post("/", candiesControllers.postCandies);
-router.put("/:id", candiesControllers.putCandies);
-router.delete("/:id", candiesControllers.deleteCandies);
+router.post("/", candiesControllers.postCandy);
+router.put("/:id", candiesControllers.putCandy);
+router.delete("/:id", candiesControllers.deleteCandy);
 
 //maps and exports router
 module.exports = router;

@@ -54,11 +54,11 @@ const getById = (req, res) => {
     });
 };
 
-// postCandies
+// postCandy
 // Route = POST http://localhost:4000/api/candies/
 //behöver ge ID till candy
 
-const postCandies = (req, res) => {
+const postCandy = (req, res) => {
 
     const candy = req.body;
     candies.push({ ...candy, id: uuidv4() });
@@ -71,10 +71,10 @@ const postCandies = (req, res) => {
         data: candies.slice(-1),
     });
 };
-// putCandies
+// putCandy
 // Route = POST http://localhost:4000/api/candies/:id
 
-const putCandies = (req, res) => {
+const putCandy = (req, res) => {
 
     const candyId = req.params.id;
     const { type, color, rarity } = req.body;
@@ -95,10 +95,10 @@ const putCandies = (req, res) => {
     });
 };
 
-// deleteCandies
+// deleteCandy
 // Route = POST http://localhost:4000/api/candies/:id
 
-const deleteCandies = (req, res) => {
+const deleteCandy = (req, res) => {
     const candyId = req.params.id;
 
     const candyIndex = candies.findIndex((u) => u.id == candyId);
@@ -114,7 +114,7 @@ const deleteCandies = (req, res) => {
 module.exports = {
     getCandies,
     getById,
-    postCandies,
-    putCandies,
-    deleteCandies,
+    postCandy,
+    putCandy,
+    deleteCandy,
   };
