@@ -8,7 +8,7 @@ const dotenv = require("dotenv").config();
 const app = express ()
 
 // creating variable port using PORT value.
-// PORT value is fetched from .env , If .env value is missing makes 3000 the PORT value
+// PORT value is fetched from .env , If .env value is missing makes 4000 the PORT value
 const port = process.env.PORT || 4000
 
 //middleware
