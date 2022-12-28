@@ -67,7 +67,7 @@ const postCandy = (req, res) => {
     //also displays the added candy object
     res.status(200).json({
         status: "sucess",
-        msg: "Following fruit added:",
+        msg: "Following candy added:",
         data: candies.slice(-1),
     });
 };
@@ -91,7 +91,7 @@ const putCandy = (req, res) => {
 
     res.status(200).json({
         status: "sucess",
-        msg: "Fruit updated",
+        msg: "Candy updated",
     });
 };
 
@@ -106,7 +106,7 @@ const deleteCandy = (req, res) => {
 
     res.status(200).json({
         status: "sucess",
-        msg: "Fruit deleted",
+        msg: "Candy deleted",
     });
 };
 
