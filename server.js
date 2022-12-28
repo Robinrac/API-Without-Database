@@ -13,7 +13,7 @@ const port = process.env.PORT || 4000
 
 //middleware
 app.use(express.json())
-app.use('/api/candies', require('./routes/candiesRoutes'))
+app.use('/api/candies', require('./routes/candyRoutes'))
 
 //displays a message when starting server
 app.listen(port,() => console.log(`Starting server through PORT: ${port} `))
