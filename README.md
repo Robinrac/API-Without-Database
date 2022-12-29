@@ -22,6 +22,7 @@ __Does not contain:__
  npm install dotenv --save-dev
  npm install -D nodemon
  npm install uuid
+ npm install uuidv4
 ``` 
 ---
 ### Commands to run the server:
